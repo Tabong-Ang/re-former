@@ -31,9 +31,9 @@ value="<%= form_authenticity_token %>"
 
 <%= form_with url: "/users", method: :post  do |form| %>
    <%= form.label :username, "Username:" %>
-   <%= form.text_field :username %>
+   <%= form.text_field :username, placeholder: "e.g Johnsome1" %>
    <%= form.label :email, "Email:" %>
-   <%= form.email_field :email %>
+   <%= form.email_field :email, placeholder: "example@someone.com" %>
    <%= form.label :password, "Password:" %>
    <%= form.password_field :password %>
    <%= form.submit "Submit Form" %>
