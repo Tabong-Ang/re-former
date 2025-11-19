@@ -25,7 +25,7 @@
 <%
 =end%>
 
-<%= form_with url: "/users/:id/edit", method: :patch, class: "max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 space-y-4" do |form| %>
+<%= form_with model: @user, class: "max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 space-y-4" do |form| %>
 <% if @user.errors.any? %>
 <div class="mb-4 p-4 bg-red-100 border border-red-300 text-red-700 rounded">
     <h2 class="font-semibold mb-2">
